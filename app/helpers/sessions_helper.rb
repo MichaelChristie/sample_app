@@ -16,6 +16,8 @@ module SessionsHelper
 		end
 	end
 
+
+
 	#comment out?
 	def current_user=(user)
 		@current_user = user
