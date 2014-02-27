@@ -13,6 +13,11 @@ class User < ActiveRecord::Base
   #attr_accessible :password, :password_confirmation
   #attr_accessible :email, :name
   attr_accessible :email, :name, :password, :password_confirmation
+
+  #toggle this if the db complains: Can't mass-assign protected attributes: admin
+  #attr_accessible :admin
+
+
   has_secure_password
   has_many :microposts, dependent: :destroy
 
