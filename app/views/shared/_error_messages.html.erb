@@ -1,6 +1,6 @@
 
 <!-- #changed from object.errors.any? -->
-<% if @user.errors.any? %>
+<% if object.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-error">
       The form contains <%= pluralize(object.errors.count, "error") %>.
